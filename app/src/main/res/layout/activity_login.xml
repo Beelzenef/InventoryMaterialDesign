@@ -90,7 +90,7 @@
         android:layout_marginBottom="@dimen/btn_SignIn_marginBottom"
         android:background="@color/colorFacebook"
         android:text="@string/btn_SignIn"
-        android:onClick="onClick_Dashboard"/>
+        android:onClick="onClick_openDashboard"/>
 
     <Button
         android:id="@+id/btn_GoogleLogin"
