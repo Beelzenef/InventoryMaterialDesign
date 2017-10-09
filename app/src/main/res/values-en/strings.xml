@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Translated strings -->
+    <string name="app_name">Inventory</string>
+    <string name="txtV_SignIn">Sign In</string>
+    <string name="txtV_User">User name / Email address</string>
+    <string name="txtV_Password">Password</string>
+    <string name="btn_SignIn">Sign In</string>
+    <string name="btn_GoogleSign">Sign In - Google+</string>
+    <string name="btn_FBSign">Sign In - Facebook</string>
+    <string name="btn_Remember"><u>Remember me</u></string>
+    <string name="btn_SignUp">Sign Up</string>
+
+    <string name="txtV_Name">Name</string>
+    <string name="edT_Description">Description</string>
+    <string name="txtV_CreationDate">Creation date</string>
+    <string name="btn_ChangeState">Change state</string>
+</resources>

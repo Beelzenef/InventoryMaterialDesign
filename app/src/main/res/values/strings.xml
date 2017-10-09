@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="txtV_SignIn">Acceder</string>
+    <string name="txtV_User">Nombre de usuario / Correo electrónico</string>
+    <string name="txtV_Password">Contraseña</string>
+    <string name="btn_SignIn">Acceder</string>
+    <string name="btn_GoogleSign">Acceder con Google+</string>
+    <string name="btn_FBSign">Acceder con Facebook</string>
+    <string name="btn_Remember"><u>Recuerdame</u></string>
+    <string name="btn_SignUp">Registrarme</string>
+
+    <string name="txtV_Name">Nombre</string>
+    <string name="edT_Description">Descripcion</string>
+    <string name="txtV_CreationDate">Fecha de creacion</string>
+    <string name="btn_ChangeState">Cambio de estado</string>
+</resources>

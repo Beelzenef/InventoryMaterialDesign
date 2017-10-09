@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:stretchColumns="1">
+    <!-- stretchColumns decide qué columna ocupa todo el espacio restante -->
+
+    <TableRow android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtV_Name"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="@string/txtV_Name"
+            android:labelFor="@+id/txtV_Name"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/edT_Name"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtV_Desc"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="@string/edT_Description"
+            android:labelFor="@+id/edT_Desc"/>
+
+        <EditText
+            android:id="@+id/edT_Desc"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:lines="8"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtV_CreationDate"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="@string/txtV_CreationDate"
+            android:labelFor="@+id/edT_CreationDate"/>
+
+        <EditText
+            android:id="@+id/edT_CreationDate"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:inputType="date"/>
+
+    </TableRow>
+
+    <TableRow android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_ChangeState"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/btn_ChangeState"
+                android:layout_span="2"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+
+</TableLayout>
