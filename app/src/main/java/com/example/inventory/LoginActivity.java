@@ -13,10 +13,14 @@ import android.widget.Button;
  */
 public class LoginActivity extends AppCompatActivity {
 
+    private Button btn_SignIn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        btn_SignIn = (Button) findViewById(R.id.btn_SignIn);
     }
 
     public void onClick_openDashboard(View v) {

@@ -7,4 +7,8 @@
     <dimen name="btn_SignIn_marginBottom">64dp</dimen>
     <dimen name="lly_SignOptions_padding">8dp</dimen>
     <dimen name="btn_GoogleSign_margin">8dp</dimen>
+    <dimen name="imgDashboardWidth">0dp</dimen>
+    <dimen name="imgDashboardHeigth">0dp</dimen>
+    <dimen name="spaceDashboard">20dp</dimen>
+
 </resources>

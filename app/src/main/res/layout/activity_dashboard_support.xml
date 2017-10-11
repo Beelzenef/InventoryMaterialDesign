@@ -1,104 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent" android:layout_height="match_parent"
-            android:columnCount="6"
-            android:orientation="horizontal">
-
-    <!-- Fila 1 -->
-    <Space android:layout_width="@dimen/spaceDashboard"/>
-
+            app:columnCount="3"
+            app:orientation="horizontal"
+    android:id="@+id/grdLDashbard">
+<!--
+    &lt;!&ndash; Fila 1 &ndash;&gt;
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/whiteboard"/>
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView13"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/table"/>
 
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/proyector"/>
 
-    <!-- Fila 2 -->
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
+    &lt;!&ndash; Fila 2 &ndash;&gt;
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/printer"/>
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/mouse"/>
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_rowWeight="1"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/monitor"/>
 
-    <!-- Fila 3 -->
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
+    &lt;!&ndash; Fila 3 &ndash;&gt;
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/keyboard"/>
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/inventory"/>
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
         app:srcCompat="@drawable/cpu"/>
 
-    <!-- Fila 4 -->
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
+    &lt;!&ndash; Fila 4 &ndash;&gt;
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
+        app:layout_columnWeight="1"
+        app:layout_gravity="fill"
+        app:layout_rowWeight="1"
         app:srcCompat="@drawable/closet"/>
-
-    <Space android:layout_width="@dimen/spaceDashboard"/>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="@dimen/imgDashboardWidth"
         android:layout_height="@dimen/imgDashboardHeigth"
-        app:srcCompat="@drawable/chair"/>
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        app:layout_gravity="fill"
+        app:srcCompat="@drawable/chair"/>-->
 
 
-</GridLayout>
+</android.support.v7.widget.GridLayout>
