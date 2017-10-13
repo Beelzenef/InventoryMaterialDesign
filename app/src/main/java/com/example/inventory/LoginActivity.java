@@ -21,19 +21,12 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         btn_SignIn = (Button) findViewById(R.id.btn_SignIn);
-    }
-
-    public void onClick_openDashboard(View v) {
-        switch (v.getId()) {
-            case R.id.btn_SignIn:
-                abrirDashboard();
-                break;
-        }
-    }
-
-    private void abrirDashboard()
-    {
-        Intent unIntent = new Intent(LoginActivity.this, DashboardActivity.class);
-        startActivity(unIntent);
+        btn_SignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent unIntent = new Intent(LoginActivity.this, DashboardActivity.class);
+                startActivity(unIntent);
+            }
+        });
     }
 }
