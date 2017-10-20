@@ -12,6 +12,10 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="GeneralTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+
+
     <!-- Creando un estilo para crear compatibilidad con SDKs anteriores -->
     <!-- Creamos jerarquia -->
     <style name="Widget" parent="@android:style/Widget"/>
