@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 /**
  * Dashboard para aplicacion de Inventory
- *
  * @author Elena G (Beelzenef)
  */
 
@@ -29,7 +28,7 @@ public class DashboardActivity extends AppCompatActivity {
         grdDashboard = (GridLayout) findViewById(R.id.grdLDashboard);
 
         // Definir un int array, para id de imágenes Inventory, Producto, Dependencias, Secciones, Preferencias
-        int[] imgs = { R.drawable.inventory, R.drawable.monitor };
+        int[] imgs = { R.drawable.inventory, R.drawable.monitor, R.drawable.mouse };
 
 
         /* R.drawable.chair, R.drawable.closet, R.drawable.cpu, R.drawable.inventory,
@@ -81,6 +80,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     }
 
+
     class ClickListenerDashboard implements View.OnClickListener {
 
         @Override
@@ -95,6 +95,9 @@ public class DashboardActivity extends AppCompatActivity {
                     break;
                 case R.drawable.monitor:
                     unIntent = new Intent(DashboardActivity.this, ProductActivity.class);
+                    break;
+                case R.drawable.mouse:
+                    unIntent = new Intent(DashboardActivity.this, DependencyActivity.class);
                     break;
             }
             startActivity(unIntent);
