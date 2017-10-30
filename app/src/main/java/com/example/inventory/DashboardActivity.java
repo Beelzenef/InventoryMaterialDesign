@@ -28,7 +28,7 @@ public class DashboardActivity extends AppCompatActivity {
         grdDashboard = (GridLayout) findViewById(R.id.grdLDashboard);
 
         // Definir un int array, para id de imágenes Inventory, Producto, Dependencias, Secciones, Preferencias
-        int[] imgs = { R.drawable.inventory, R.drawable.monitor, R.drawable.mouse };
+        int[] imgs = { R.drawable.inventory, R.drawable.monitor, R.drawable.mouse, R.drawable.closet };
 
 
         /* R.drawable.chair, R.drawable.closet, R.drawable.cpu, R.drawable.inventory,
@@ -98,6 +98,9 @@ public class DashboardActivity extends AppCompatActivity {
                     break;
                 case R.drawable.mouse:
                     unIntent = new Intent(DashboardActivity.this, DependencyActivity.class);
+                    break;
+                case R.drawable.closet:
+                    unIntent = new Intent(DashboardActivity.this, SectorActivity.class);
                     break;
             }
             startActivity(unIntent);

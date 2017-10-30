@@ -26,4 +26,6 @@
     <string name="txtV_FechaCompra">Fecha de compra</string>
     <string name="txtV_URL">URL</string>
     <string name="txtV_Notas">Notas</string>
+
+    <string name="menu_save">Guardar</string>
 </resources>
