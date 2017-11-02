@@ -54,6 +54,11 @@ public class SectorActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+
         outState.putParcelableArrayList("seccion", sectionAdapter.getSectionsModified());
+
+        // Identificar switch
+        // Comprobar cambio
+        // Comprobar todos los sections
     }
 }
