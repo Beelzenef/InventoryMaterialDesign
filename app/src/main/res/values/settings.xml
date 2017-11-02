@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- settings -->
+
+    <string name="pref_category_general">Preferencias generales</string>
+    <string name="pref_description_showimage">Mostrar imagen o no de los elementos</string>
+    <string name="pref_title_showimage">Mostrar imagen</string>
+    <string name="pref_summary_numcolumns">Número de columnas a mostrar en RecyclerView</string>
+    <string name="pref_title_numcolumns">Número de columnas</string>
+
+    <string-array name="pref_entries_numcolumns">
+        <item>1 columna</item>
+        <item>2 columnas</item>
+        <item>3 columnas</item>
+        <item>4 columnas</item>
+    </string-array>
+    <string-array name="pref_entriesvalues_numcolumns">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="pref_title_aboutme">Sobre mi</string>
+
+    <!-- account settings -->
+
+    <string name="pref_category_account">Preferencias de usuario</string>
+
+    <string name="pref_title_username">Nombre de usuario</string>
+    <string name="pref_summary_username">Nombre de usuario en la aplicacion</string>
+
+    <string name="pref_title_password">Contraseña</string>
+    <string name="pref_summary_password">Contraseña de usuario guardada</string>
+
+    <string name="pref_title_rememberme">Recordar usuario</string>
+    <string name="pref_summary_rememberme">Recordar usuario para el siguiente inicio de sesion</string>
+
+</resources>

@@ -29,5 +29,8 @@
     <string name="txtV_URL">URL</string>
     <string name="txtV_Notas">Notes</string>
 
-    <string name="menu_save">Save</string>
+    <!-- Strings para ACTIONS, MENUS -->
+    <string name="action_save">Save</string>
+    <string name="action_account_settings">Account settings</string>
+    <string name="action_general_settings">Settings</string>
 </resources>

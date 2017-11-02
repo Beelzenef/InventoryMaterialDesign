@@ -104,6 +104,7 @@ public class SectionAdapter extends RecyclerView.Adapter<SectionAdapter.SectionV
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 
+            // Resolver estado dinámico
         }
     }
 }

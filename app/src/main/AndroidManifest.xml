@@ -21,19 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-            android:name=".InventoryActivity"/>
-        <activity
-            android:name=".DashboardActivity">
+        <activity android:name=".InventoryActivity"/>
+        <activity android:name=".DashboardActivity">
         </activity>
-        <activity
-            android:name=".ProductActivity">
+        <activity android:name=".ProductActivity">
         </activity>
-        <activity
-            android:name=".DependencyActivity">
+        <activity android:name=".DependencyActivity">
         </activity>
         <activity android:name=".SectorActivity">
         </activity>
+        <activity android:name=".AccountSettingsActivity"/>
+        <activity android:name=".GeneralSettingsActivity"/>
+        <activity android:name=".AboutActivity" />
     </application>
 
 </manifest>
