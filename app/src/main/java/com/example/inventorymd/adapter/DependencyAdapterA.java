@@ -1,4 +1,4 @@
-package com.example.inventory.adapter;
+package com.example.inventorymd.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.example.inventory.R;
-import com.example.inventory.pojo.Dependency;
-import com.example.inventory.repo.DependencyRepository;
+import com.example.inventorymd.R;
+import com.example.inventorymd.pojo.Dependency;
+import com.example.inventorymd.repo.DependencyRepository;
 import com.github.ivbaranov.mli.MaterialLetterIcon;
 
 // Se ha de importar la R porque estamos en un package "aparte" que utiliza la Clase R

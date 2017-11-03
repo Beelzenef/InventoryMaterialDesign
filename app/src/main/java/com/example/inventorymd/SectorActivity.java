@@ -1,14 +1,16 @@
-package com.example.inventory;
+package com.example.inventorymd;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-import com.example.inventory.adapter.SectionAdapter;
-import com.example.inventory.pojo.Section;
+import com.example.inventorymd.adapter.SectionAdapter;
+import com.example.inventorymd.pojo.Section;
 
 public class SectorActivity extends AppCompatActivity {
 
@@ -20,13 +22,16 @@ public class SectorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_section);
 
-
         recyclerView = (RecyclerView) findViewById(R.id.recyclerSection);
 
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
 
-        if (savedInstanceState == null) {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_Section);
+        setSupportActionBar(toolbar);
+
+        if (savedInstanceState != null) {
             sectionAdapter = new SectionAdapter(savedInstanceState.<Section>getParcelableArrayList("seccion"));
         }
         else {

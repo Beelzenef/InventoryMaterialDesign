@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.inventory">
+          package="com.example.inventorymd">
 
     <application
         android:name=".InventoryApplication"
@@ -32,7 +32,8 @@
         </activity>
         <activity android:name=".AccountSettingsActivity"/>
         <activity android:name=".GeneralSettingsActivity"/>
-        <activity android:name=".AboutActivity" />
+        <activity android:name=".AboutActivity"/>
+        <activity android:name=".AddDependencyActivity"/>
     </application>
 
 </manifest>

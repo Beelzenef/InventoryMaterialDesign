@@ -1,9 +1,7 @@
-package com.example.inventory.pojo;
+package com.example.inventorymd.pojo;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import java.util.ArrayList;
 
 /**
  * @author Elena G (Beelzenef)

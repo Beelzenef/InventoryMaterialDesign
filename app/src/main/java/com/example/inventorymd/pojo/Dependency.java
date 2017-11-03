@@ -1,4 +1,4 @@
-package com.example.inventory.pojo;
+package com.example.inventorymd.pojo;
 
 /**
  * Clase POJO para contener Dependencias

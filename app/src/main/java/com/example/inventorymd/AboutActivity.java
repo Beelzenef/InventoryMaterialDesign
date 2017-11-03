@@ -1,4 +1,4 @@
-package com.example.inventory;
+package com.example.inventorymd;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;

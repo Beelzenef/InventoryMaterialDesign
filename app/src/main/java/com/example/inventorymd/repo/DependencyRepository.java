@@ -1,6 +1,6 @@
-package com.example.inventory.repo;
+package com.example.inventorymd.repo;
 
-import com.example.inventory.pojo.Dependency;
+import com.example.inventorymd.pojo.Dependency;
 
 import java.util.ArrayList;
 
@@ -39,6 +39,16 @@ public class DependencyRepository {
     {
         addDependency(new Dependency(1, "1º CF Grado superior", "1CFGS", "Ciclos superiores, primer año, la locura"));
         addDependency(new Dependency(2, "2º CF Grado superior", "2CFGS", "Ciclos superiores, segundo año, la muerte"));
+        addDependency(new Dependency(3, "1º CF Grado superior", "1CFGS", "Ciclos superiores, primer año, la locura"));
+        addDependency(new Dependency(4, "2º CF Grado superior", "2CFGS", "Ciclos superiores, segundo año, la muerte"));
+        addDependency(new Dependency(5, "1º CF Grado superior", "1CFGS", "Ciclos superiores, primer año, la locura"));
+        addDependency(new Dependency(6, "2º CF Grado superior", "2CFGS", "Ciclos superiores, segundo año, la muerte"));
+        addDependency(new Dependency(7, "1º CF Grado superior", "1CFGS", "Ciclos superiores, primer año, la locura"));
+        addDependency(new Dependency(8, "2º CF Grado superior", "2CFGS", "Ciclos superiores, segundo año, la muerte"));
+        addDependency(new Dependency(9, "1º CF Grado superior", "1CFGS", "Ciclos superiores, primer año, la locura"));
+        addDependency(new Dependency(10, "2º CF Grado superior", "2CFGS", "Ciclos superiores, segundo año, la muerte"));
+        addDependency(new Dependency(11, "1º CF Grado superior", "1CFGS", "Ciclos superiores, primer año, la locura"));
+        addDependency(new Dependency(12, "2º CF Grado superior", "2CFGS", "Ciclos superiores, segundo año, la muerte"));
     }
 
     /**

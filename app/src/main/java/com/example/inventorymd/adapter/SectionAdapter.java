@@ -1,4 +1,4 @@
-package com.example.inventory.adapter;
+package com.example.inventorymd.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,11 +9,10 @@ import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import com.example.inventory.R;
-import com.example.inventory.pojo.Section;
-import com.example.inventory.repo.SectionRepository;
+import com.example.inventorymd.R;
+import com.example.inventorymd.pojo.Section;
+import com.example.inventorymd.repo.SectionRepository;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**

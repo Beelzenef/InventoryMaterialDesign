@@ -1,4 +1,4 @@
-package com.example.inventory.repo;
+package com.example.inventorymd.repo;
 
 /**
  * @author Elena G (Beelzenef)

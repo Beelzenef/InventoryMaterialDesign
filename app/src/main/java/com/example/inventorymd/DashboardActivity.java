@@ -1,4 +1,4 @@
-package com.example.inventory;
+package com.example.inventorymd;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-
-import java.util.ArrayList;
 
 /**
  * Dashboard para aplicacion de Inventory

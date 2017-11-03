@@ -1,4 +1,4 @@
-package com.example.inventory;
+package com.example.inventorymd;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
