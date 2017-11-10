@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="userEmptyError">User empty</string>
+    <string name="passwordEmptyError">Password empty</string>
+    <string name="emailEmptyError">Email empty</string>
+    <string name="passwordLengthError">Wrong password length</string>
+</resources>

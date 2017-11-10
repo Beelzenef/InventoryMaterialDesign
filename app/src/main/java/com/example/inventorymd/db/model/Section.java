@@ -1,4 +1,4 @@
-package com.example.inventorymd.pojo;
+package com.example.inventorymd.db.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

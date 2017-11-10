@@ -3,7 +3,7 @@
           package="com.example.inventorymd">
 
     <application
-        android:name=".InventoryApplication"
+        android:name=".ui.inventory.InventoryApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         <activity android:name=".SplashActivity">
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:theme="@style/LoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -21,19 +21,19 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".InventoryActivity"/>
+        <activity android:name=".ui.inventory.InventoryActivity"/>
         <activity android:name=".DashboardActivity">
         </activity>
-        <activity android:name=".ProductActivity">
+        <activity android:name=".ui.product.ProductActivity">
         </activity>
-        <activity android:name=".DependencyActivity">
+        <activity android:name=".ui.dependency.DependencyActivity">
         </activity>
-        <activity android:name=".SectorActivity">
+        <activity android:name=".ui.sector.SectorActivity">
         </activity>
-        <activity android:name=".AccountSettingsActivity"/>
-        <activity android:name=".GeneralSettingsActivity"/>
-        <activity android:name=".AboutActivity"/>
-        <activity android:name=".AddDependencyActivity"/>
+        <activity android:name=".ui.prefs.AccountSettingsActivity"/>
+        <activity android:name=".ui.prefs.GeneralSettingsActivity"/>
+        <activity android:name=".ui.about.AboutActivity"/>
+        <activity android:name=".ui.dependency.AddDependencyActivity"/>
     </application>
 
 </manifest>

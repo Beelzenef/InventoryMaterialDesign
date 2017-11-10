@@ -1,9 +1,11 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui.about;
 
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.inventorymd.R;
 
 import mehdi.sakout.aboutpage.AboutPage;
 

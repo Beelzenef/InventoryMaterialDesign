@@ -1,16 +1,16 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui.sector;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 
+import com.example.inventorymd.R;
 import com.example.inventorymd.adapter.SectionAdapter;
-import com.example.inventorymd.pojo.Section;
+import com.example.inventorymd.db.model.Section;
 
 public class SectorActivity extends AppCompatActivity {
 

@@ -10,6 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.inventorymd.ui.inventory.InventoryActivity;
+import com.example.inventorymd.ui.product.ProductActivity;
+import com.example.inventorymd.ui.sector.SectorActivity;
+import com.example.inventorymd.ui.dependency.DependencyActivity;
+import com.example.inventorymd.ui.prefs.AccountSettingsActivity;
+import com.example.inventorymd.ui.prefs.GeneralSettingsActivity;
+
 /**
  * Dashboard para aplicacion de Inventory
  * @author Elena G (Beelzenef)

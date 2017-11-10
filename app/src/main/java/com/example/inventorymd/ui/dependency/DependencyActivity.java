@@ -1,20 +1,19 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui.dependency;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.inventorymd.R;
 import com.example.inventorymd.adapter.DependencyAdapter;
-import com.example.inventorymd.pojo.Dependency;
-import com.example.inventorymd.repo.DependencyRepository;
+import com.example.inventorymd.db.model.Dependency;
+import com.example.inventorymd.db.repo.DependencyRepository;
 
 /**
  * Clase para gestionar las adapter en una lista

@@ -1,4 +1,4 @@
-package com.example.inventorymd.pojo;
+package com.example.inventorymd.db.model;
 
 import java.security.Permission;
 import java.util.ArrayList;

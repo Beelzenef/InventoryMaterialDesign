@@ -1,10 +1,13 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui.login;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.inventorymd.DashboardActivity;
+import com.example.inventorymd.R;
 
 /**
  *  Activity de Login con diversas redes sociales. Dirige al Dashboard

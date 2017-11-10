@@ -1,18 +1,20 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui.prefs;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.support.annotation.Nullable;
 
+import com.example.inventorymd.R;
+
 /**
  * Created by usuario on 2/11/17.
  */
 
-public class GeneralSettingsActivity extends PreferenceActivity {
+public class AccountSettingsActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.general_settings);
+        addPreferencesFromResource(R.xml.account_settings);
     }
 }

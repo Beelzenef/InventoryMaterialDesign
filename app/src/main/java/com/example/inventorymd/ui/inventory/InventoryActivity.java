@@ -1,7 +1,9 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui.inventory;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.inventorymd.R;
 
 /**
  * Mostrando inventarios para nuestra aplicacion

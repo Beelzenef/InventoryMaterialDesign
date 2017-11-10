@@ -1,6 +1,6 @@
-package com.example.inventorymd.repo;
+package com.example.inventorymd.db.repo;
 
-import com.example.inventorymd.pojo.Section;
+import com.example.inventorymd.db.model.Section;
 
 import java.util.ArrayList;
 

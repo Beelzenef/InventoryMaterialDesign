@@ -10,8 +10,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.inventorymd.R;
-import com.example.inventorymd.pojo.Section;
-import com.example.inventorymd.repo.SectionRepository;
+import com.example.inventorymd.db.model.Section;
+import com.example.inventorymd.db.repo.SectionRepository;
 
 import java.util.ArrayList;
 

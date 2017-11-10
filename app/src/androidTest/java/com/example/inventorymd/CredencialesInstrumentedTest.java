@@ -1,13 +1,27 @@
 package com.example.inventorymd;
 
 import android.content.Context;
+import android.support.annotation.StringRes;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.matcher.ViewMatchers;
+import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.example.inventorymd.ui.login.LoginActivity;
+
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static android.support.test.espresso.action.ViewActions.typeText;
+import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.withEffectiveVisibility;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Instrumentation test, which will execute on an Android device.
@@ -24,35 +38,50 @@ public class CredencialesInstrumentedTest {
         assertEquals("com.example.loginlinearlayout", appContext.getPackageName());
     }
 
+    @Rule
+    public ActivityTestRule<LoginActivity> mainActivityRule =
+            new ActivityTestRule<>(LoginActivity.class);
 
     // 1. Usuario introduce username (prueba instrumental, sobre GUI)
     @Test
     public void isUserEmpty() throws Exception {
-
+        onView(withId(R.id.edT_User)).perform(typeText("user"), closeSoftKeyboard());
+        onView(withId(R.id.btn_SignIn)).perform(click())
+                .check(matches(withText("")));
+        checkSnackBarDisplayByMessage(R.string.passwordEmptyError);
     }
 
     // Usuario introduce email (prueba instrumental, sobre GUI)
     @Test
     public void isEmailEmpty() throws Exception {
-
+        onView(withId(R.id.edT_User)).perform(typeText("user"), closeSoftKeyboard());
+        onView(withId(R.id.btn_SignIn)).perform(click())
+                .check(matches(withText("")));
+        checkSnackBarDisplayByMessage(R.string.passwordEmptyError);
     }
 
     // Usuario introduce passw (prueba instrumental, sobre GUI)
     @Test
     public void isPasswordEmpty() throws Exception {
-
+        onView(withId(R.id.edT_Passw)).perform(typeText("usuario1"), closeSoftKeyboard());
+        onView(withId(R.id.btn_SignIn)).perform(click())
+                .check(matches(withText("")));
+        checkSnackBarDisplayByMessage(R.string.passwordEmptyError);
     }
 
     // Passwd al menos con 6 chars (prueba instrumental, sobre GUI)
     @Test
     public void passwordLenght_isCorrect() throws Exception {
-
+        checkSnackBarDisplayByMessage(R.string.passwordLengthError);
     }
 
     // Doble comprobacion de contraseña (prueba instrumental, sobre GUI)
     @Test
-    public void passwordDoubleCheck() throws Exception
-    {
+    public void passwordDoubleCheck() throws Exception {
 
+    }
+
+    public void checkSnackBarDisplayByMessage(@StringRes int m) {
+        onView(withText(m)).check(matches(withEffectiveVisibility(ViewMatchers.Visibility.VISIBLE)));
     }
 }
