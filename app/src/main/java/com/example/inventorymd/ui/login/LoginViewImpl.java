@@ -14,9 +14,11 @@ import com.example.inventorymd.R;
  *
  *  @author Elena G (Beelzenef)
  */
-public class LoginActivity extends AppCompatActivity {
+public class LoginViewImpl extends AppCompatActivity {
 
     private Button btn_SignIn;
+
+    private LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,11 @@ public class LoginActivity extends AppCompatActivity {
         btn_SignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent unIntent = new Intent(LoginActivity.this, DashboardActivity.class);
+                loginPresenter.validateCredentials("user", "passw");
+                /*
+                Intent unIntent = new Intent(LoginViewImpl.this, DashboardActivity.class);
                 startActivity(unIntent);
+                */
             }
         });
     }

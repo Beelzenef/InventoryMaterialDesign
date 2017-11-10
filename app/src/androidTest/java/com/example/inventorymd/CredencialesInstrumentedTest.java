@@ -7,7 +7,7 @@ import android.support.test.espresso.matcher.ViewMatchers;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 
-import com.example.inventorymd.ui.login.LoginActivity;
+import com.example.inventorymd.ui.login.LoginViewImpl;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -39,8 +39,8 @@ public class CredencialesInstrumentedTest {
     }
 
     @Rule
-    public ActivityTestRule<LoginActivity> mainActivityRule =
-            new ActivityTestRule<>(LoginActivity.class);
+    public ActivityTestRule<LoginViewImpl> mainActivityRule =
+            new ActivityTestRule<>(LoginViewImpl.class);
 
     // 1. Usuario introduce username (prueba instrumental, sobre GUI)
     @Test
