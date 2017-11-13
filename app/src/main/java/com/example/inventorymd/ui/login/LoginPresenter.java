@@ -7,4 +7,6 @@ package com.example.inventorymd.ui.login;
 public interface LoginPresenter {
 
     void validateCredentials(String user, String passw);
+
+    void onDestroy();
 }

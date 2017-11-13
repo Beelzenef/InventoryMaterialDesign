@@ -47,8 +47,8 @@ public class CredencialesInstrumentedTest {
     public void isUserEmpty() throws Exception {
         onView(withId(R.id.edT_User)).perform(typeText("user"), closeSoftKeyboard());
         onView(withId(R.id.btn_SignIn)).perform(click())
-                .check(matches(withText("")));
-        checkSnackBarDisplayByMessage(R.string.passwordEmptyError);
+                .check(matches(withText("*{6,}")));
+        checkSnackBarDisplayByMessage(R.string.userEmptyError);
     }
 
     // Usuario introduce email (prueba instrumental, sobre GUI)
@@ -56,7 +56,7 @@ public class CredencialesInstrumentedTest {
     public void isEmailEmpty() throws Exception {
         onView(withId(R.id.edT_User)).perform(typeText("user"), closeSoftKeyboard());
         onView(withId(R.id.btn_SignIn)).perform(click())
-                .check(matches(withText("")));
+                .check(matches(withText("([a-z]+[A-Z]+[0-9]+){6,}")));
         checkSnackBarDisplayByMessage(R.string.passwordEmptyError);
     }
 
@@ -65,13 +65,16 @@ public class CredencialesInstrumentedTest {
     public void isPasswordEmpty() throws Exception {
         onView(withId(R.id.edT_Passw)).perform(typeText("usuario1"), closeSoftKeyboard());
         onView(withId(R.id.btn_SignIn)).perform(click())
-                .check(matches(withText("")));
+                .check(matches(withText("([a-z]+[A-Z]+[0-9]+){6,}")));
         checkSnackBarDisplayByMessage(R.string.passwordEmptyError);
     }
 
     // Passwd al menos con 6 chars (prueba instrumental, sobre GUI)
     @Test
     public void passwordLenght_isCorrect() throws Exception {
+        onView(withId(R.id.edT_Passw)).perform(typeText("usuario1"), closeSoftKeyboard());
+        onView(withId(R.id.btn_SignIn)).perform(click())
+                .check(matches(withText("([a-z]+[A-Z]+[0-9]+){6,}")));
         checkSnackBarDisplayByMessage(R.string.passwordLengthError);
     }
 

@@ -9,7 +9,8 @@
     android:orientation="vertical"
     android:padding="@dimen/lly_login_padding"
     android:weightSum="1"
-    tools:context=".ui.login.LoginViewImpl">
+    tools:context=".ui.login.LoginViewImpl"
+    android:id="@+id/android.R.id.content">
 
     <TextView
         android:id="@+id/txtV_SignIn"
@@ -36,7 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/edT_User_marginBottom"
         android:background="@drawable/shapeedittexts"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:text="Usuario1"/>
 
     <TextView
         android:id="@+id/txtV_Passw"
@@ -52,7 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/shapeedittexts"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword"
+        android:text="Usuario1"/>
 
     <LinearLayout
         android:id="@+id/lly_SignOptions"

@@ -19,7 +19,7 @@ public class UserRepository {
 
     void inicializarUsers()
     {
-        addUser(new User(1, "user1", "usuario", "user1", "user1@gmail.com", true, true));
+        addUser(new User(1, "Usuario1", "Usuario1", "user1", "user1@gmail.com", true, true));
         addUser(new User(2, "user2", "usuario2", "user2", "user2@gmail.com", false, false));
         addUser(new User(2, "user3", "usuario3", "user3", "user3@gmail.com", false, true));
     }
@@ -45,9 +45,35 @@ public class UserRepository {
         return users;
     }
 
-    // Metodo
-    public boolean userExists(User checkingUser)
+    private boolean existingUser(String user)
     {
-        return true;
+        boolean encontrado = false;
+
+        for (User u:
+             users) {
+            if (u.getUser().equals(user))
+                encontrado = true;
+        }
+
+        return encontrado;
+    }
+    
+    private boolean existingPassword(String passw)
+    {
+        boolean encontrado = false;
+
+        for (User u:
+                users) {
+            if (u.getPassw().equals(passw))
+                encontrado = true;
+        }
+
+        return encontrado;
+    }
+    
+    // Metodo
+    public boolean userExists(String checkingUser, String checkingPassword)
+    {
+        return existingPassword(checkingPassword) && existingUser(checkingUser);
     }
 }

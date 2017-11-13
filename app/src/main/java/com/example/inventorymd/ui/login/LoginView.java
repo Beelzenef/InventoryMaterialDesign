@@ -6,11 +6,13 @@ package com.example.inventorymd.ui.login;
 
 public interface LoginView {
 
-    void navigeteToHome();
+    void navigateToHome();
 
     void setUserEmptyError();
 
     void setPasswordEmptyError();
 
     void setPasswordError();
+
+    void onUserNotExists();
 }

@@ -37,6 +37,17 @@ public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLog
 
     @Override
     public void onSucess() {
+        loginView.navigateToHome();
+    }
 
+    @Override
+    public void onUserNotExists() {
+        loginView.onUserNotExists();
+    }
+
+    @Override
+    public void onDestroy() {
+        loginView = null;
+        loginInteractor = null;
     }
 }

@@ -4,4 +4,5 @@
     <string name="passwordEmptyError">Password empty</string>
     <string name="emailEmptyError">Email empty</string>
     <string name="passwordLengthError">Wrong password length</string>
+    <string name="userNotExists">User not exists</string>
 </resources>

@@ -34,6 +34,8 @@
         <activity android:name=".ui.prefs.GeneralSettingsActivity"/>
         <activity android:name=".ui.about.AboutActivity"/>
         <activity android:name=".ui.dependency.AddDependencyActivity"/>
+        <activity android:name=".ui.base.BaseActivity">
+        </activity>
     </application>
 
 </manifest>
