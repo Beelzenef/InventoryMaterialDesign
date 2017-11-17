@@ -3,6 +3,9 @@ package com.example.inventorymd.db.repo;
 import com.example.inventorymd.db.model.Dependency;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * @author Elena G (Beelzenef)
@@ -72,10 +75,13 @@ public class DependencyRepository {
     }
 
     /**
-     *
+     * ArrayList ordenado según el criterio compareTo de la interfaz Comparable
      */
     public ArrayList<Dependency> getDependencies()
     {
+        Collections.sort(dependencies, new Dependency.DependencyOrderBySortName());
         return dependencies;
     }
+
+
 }

@@ -14,6 +14,8 @@ import com.example.inventorymd.db.model.Dependency;
 import com.example.inventorymd.db.repo.DependencyRepository;
 import com.github.ivbaranov.mli.MaterialLetterIcon;
 
+import java.util.ArrayList;
+
 // Se ha de importar la R porque estamos en un package "aparte" que utiliza la Clase R
 
 /**
@@ -23,8 +25,15 @@ import com.github.ivbaranov.mli.MaterialLetterIcon;
 
 public class DependencyAdapter extends ArrayAdapter<Dependency> {
 
+    private ArrayList<Dependency> dependencies;
+
     public DependencyAdapter(@NonNull Context context) {
-        super(context, R.layout.item_dependency, DependencyRepository.getInstance().getDependencies());
+
+        // Al tener más de un criterio, se crea una copia del Arraylist de DependencyRepositoriy
+        // para tener una copia local en Adapter, modificable sin modificar los datos
+        super(context, R.layout.item_dependency, new ArrayList<>(DependencyRepository.getInstance().getDependencies()));
+
+        sort(new Dependency.DependencyOrderBySortName());
     }
 
     @NonNull
