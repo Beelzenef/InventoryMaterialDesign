@@ -1,7 +1,9 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.inventorymd.R;
 
 /**
  * Activity de Splash, de duracion mínima, para el inicio de aplicación

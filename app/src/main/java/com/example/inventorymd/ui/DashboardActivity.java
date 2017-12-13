@@ -1,4 +1,4 @@
-package com.example.inventorymd;
+package com.example.inventorymd.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.inventorymd.R;
 import com.example.inventorymd.ui.inventory.InventoryActivity;
 import com.example.inventorymd.ui.product.ProductActivity;
 import com.example.inventorymd.ui.sector.SectorActivity;
